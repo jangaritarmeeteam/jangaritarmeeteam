@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180">
+<style>
+  .n{font:600 40px -apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#1f2328;letter-spacing:-.5px}
+  .r{font:400 18px -apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#59636e}
+</style>
+<rect x=".5" y=".5" width="999" height="179" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+<rect x="48" y="58" width="4" height="64" rx="2" fill="#0969da"/>
+<text x="72" y="92" class="n">José David Angarita</text>
+<text x="72" y="122" class="r">Desarrollo de software empresarial · Meeteam</text>
+</svg>
