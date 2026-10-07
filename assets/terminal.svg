@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="372" viewBox="0 0 1000 372">
+<defs><filter id="glow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="redglow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur in="SourceAlpha" stdDeviation="7" result="b"/><feFlood flood-color="#ff1f3d" flood-opacity=".9"/><feComposite in2="b" operator="in" result="g"/><feGaussianBlur in="SourceAlpha" stdDeviation="1.2" result="b2"/><feFlood flood-color="#fff" flood-opacity=".6"/><feComposite in2="b2" operator="in" result="w"/><feMerge><feMergeNode in="g"/><feMergeNode in="g"/><feMergeNode in="w"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="1"><animate attributeName="seed" values="1;2;3;4;5;6;7;8" dur=".8s" repeatCount="indefinite" calcMode="discrete"/></feTurbulence><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter>
+<radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".95"/></radialGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff1f3d" stop-opacity="0"/><stop offset=".85" stop-color="#ff1f3d" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
+<pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" opacity=".45"/></pattern>
+<clipPath id="inner"><rect x="2" y="46" width="996" height="324"/></clipPath>
+<clipPath id="frame"><rect width="1000" height="372" rx="14"/></clipPath></defs>
+<style>
+  text{font:500 15px 'JetBrains Mono','Fira Code','SF Mono',Consolas,Menlo,monospace;white-space:pre}
+  .pr{fill:#ff1f3d;font-weight:700} .cmd{fill:#f2f2f2} .out{fill:#7d7d7d}
+  .dir{fill:#ff1f3d} .hl{fill:#fff;font-weight:700}
+  .ttl{font:500 12px 'JetBrains Mono','Fira Code','SF Mono',Consolas,Menlo,monospace;letter-spacing:2px;fill:#7d7d7d}
+  .cur{fill:#ff1f3d;animation:blink 1s steps(1) infinite, show 22.0s infinite steps(1)}
+  @keyframes blink{50%{fill-opacity:0}}
+  @keyframes show{0%{opacity:0}47.41%,96%{opacity:1}97%,100%{opacity:0}}
+  .sweep{animation:sweep 5s linear infinite}
+  @keyframes sweep{from{transform:translateY(-120px)}to{transform:translateY(372px)}}
+  .o0{animation:k0 22.0s infinite}@keyframes k0{0%,2.73%{transform:translateX(0);animation-timing-function:steps(6,end)}4.64%,96%{transform:translateX(66.6px)}97%,100%{transform:translateX(0)}}.o1{animation:k1 22.0s infinite steps(1)}@keyframes k1{0%{opacity:0}6.23%,96%{opacity:1}97%,100%{opacity:0}}.o2{animation:k2 22.0s infinite}@keyframes k2{0%,10.32%{transform:translateX(0);animation-timing-function:steps(13,end)}14.45%,96%{transform:translateX(130.3px)}97%,100%{transform:translateX(0)}}.o3{animation:k3 22.0s infinite steps(1)}@keyframes k3{0%{opacity:0}16.05%,96%{opacity:1}97%,100%{opacity:0}}.o4{animation:k4 22.0s infinite}@keyframes k4{0%,20.14%{transform:translateX(0);animation-timing-function:steps(13,end)}24.27%,96%{transform:translateX(130.3px)}97%,100%{transform:translateX(0)}}.o5{animation:k5 22.0s infinite steps(1)}@keyframes k5{0%{opacity:0}25.86%,96%{opacity:1}97%,100%{opacity:0}}.o6{animation:k6 22.0s infinite}@keyframes k6{0%,29.95%{transform:translateX(0);animation-timing-function:steps(20,end)}36.32%,96%{transform:translateX(194.0px)}97%,100%{transform:translateX(0)}}.o7{animation:k7 22.0s infinite steps(1)}@keyframes k7{0%{opacity:0}37.91%,96%{opacity:1}97%,100%{opacity:0}}.o8{animation:k8 22.0s infinite}@keyframes k8{0%,42.00%{transform:translateX(0);animation-timing-function:steps(12,end)}45.82%,96%{transform:translateX(121.2px)}97%,100%{transform:translateX(0)}}.o9{animation:k9 22.0s infinite steps(1)}@keyframes k9{0%{opacity:0}47.41%,96%{opacity:1}97%,100%{opacity:0}}
+</style>
+<g clip-path="url(#frame)">
+<rect width="1000" height="372" fill="#050505"/>
+<rect width="1000" height="44" fill="#0b0b0b"/><line x1="0" y1="44" x2="1000" y2="44" stroke="#1c1c1c"/>
+<circle cx="26" cy="22" r="5.5" fill="#ff1f3d"/><circle cx="46" cy="22" r="5.5" fill="#3a3a3a"/><circle cx="66" cy="22" r="5.5" fill="#3a3a3a"/>
+<text x="500.0" y="27" text-anchor="middle" class="ttl">ROOT@MEETEAM — ~/perfil</text>
+<g clip-path="url(#inner)"><text x="36" y="84" class="pr">❯</text><text x="58" y="84" class="cmd">whoami</text><rect class="o0" x="56" y="67" width="942" height="26" fill="#050505"/><text x="36" y="110" class="out o1">José David Angarita — Software para la industria @ Meeteam</text><text x="36" y="136" class="pr">❯</text><text x="58" y="136" class="cmd">cat stack.txt</text><rect class="o2" x="56" y="119" width="942" height="26" fill="#050505"/><text x="36" y="162" class="out o3">TypeScript · Next.js · NestJS · FastAPI · PostgreSQL · Docker</text><text x="36" y="188" class="pr">❯</text><text x="58" y="188" class="cmd">ls productos/</text><rect class="o4" x="56" y="171" width="942" height="26" fill="#050505"/><text x="36" y="214" class="dir o5">manufactura/   cumplimiento/   talento-humano/   datos-ia/</text><text x="36" y="240" class="pr">❯</text><text x="58" y="240" class="cmd">integraciones --list</text><rect class="o6" x="56" y="223" width="942" height="26" fill="#050505"/><text x="36" y="266" class="out o7">SAP · Business Central · SIESA · SQL Server · Shopify · Twilio</text><text x="36" y="292" class="pr">❯</text><text x="58" y="292" class="cmd">echo $MISION</text><rect class="o8" x="56" y="275" width="942" height="26" fill="#050505"/><text x="36" y="318" class="hl o9">Llevo la planta del Excel al software en producción.</text></g>
+<rect class="cur" x="515.2" y="303" width="9" height="19" filter="url(#soft)"/>
+<rect class="sweep" x="0" y="0" width="1000" height="90" fill="url(#beam)" opacity=".25"/>
+<rect width="1000" height="372" fill="url(#scan)" opacity=".6"/>
+<rect width="1000" height="372" filter="url(#grain)" opacity=".05"/>
+</g>
+<rect x=".5" y=".5" width="999" height="371" rx="14" fill="none" stroke="#1c1c1c"/>
+<path d="M8,22V8H22 M978,8H992V22 M992,350V364H978 M22,364H8V350" fill="none" stroke="#ff1f3d" stroke-width="1.5"/>
+</svg>

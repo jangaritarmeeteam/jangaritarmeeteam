@@ -1,0 +1,19 @@
+{
+  "type": "normal",
+  "fileName": "profile-crimson.svg",
+  "backgroundColor": "#000000",
+  "foregroundColor": "#f2f2f2",
+  "strongColor": "#ff1f3d",
+  "weakColor": "#7d7d7d",
+  "radarColor": "#ff1f3d",
+  "growingAnimation": true,
+  "contribColors": ["#111111", "#4a000c", "#8a0016", "#c90022", "#ff1f3d"],
+  "l10n": {
+    "commit": "Commits",
+    "repo": "Repositorios",
+    "review": "Revisiones",
+    "pullreq": "Pull Requests",
+    "issue": "Issues",
+    "contrib": "contribuciones"
+  }
+}
