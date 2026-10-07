@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280">
+<defs>
+  <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff2bd6"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1117" stop-opacity="1"/><stop offset=".35" stop-color="#0d1117" stop-opacity="0"/></linearGradient>
+  <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6.0" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <clipPath id="floor"><rect x="0" y="200" width="1000" height="80"/></clipPath>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".18"/></pattern>
+</defs>
+<style>
+  .name{font:800 56px 'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:4px;fill:#e6edf3;animation:flicker 7s infinite}
+  .sub{font:600 17px 'JetBrains Mono','Fira Code','SF Mono',Consolas,Menlo,monospace;letter-spacing:6px;fill:#00f0ff}
+  .g1{fill:#00f0ff;opacity:0;animation:gl1 4s infinite steps(1)}
+  .g2{fill:#ff2bd6;opacity:0;animation:gl2 4s infinite steps(1)}
+  .moving{animation:move 1.2s linear infinite}
+  .sunbox{animation:pulse 5s ease-in-out infinite;transform-origin:500px 200px}
+  @keyframes move{from{transform:translateY(0)}to{transform:translateY(14px)}}
+  @keyframes pulse{50%{opacity:.75}}
+  @keyframes flicker{0%,19%,21%,62%,64%,100%{opacity:1}20%,63%{opacity:.55}}
+  @keyframes gl1{0%,86%{opacity:0;transform:none}87%{opacity:.85;transform:translate(-5px,2px)}89%{opacity:.85;transform:translate(4px,-1px)}91%{opacity:.85;transform:translate(-2px,0)}93%,100%{opacity:0}}
+  @keyframes gl2{0%,86%{opacity:0;transform:none}87%{opacity:.85;transform:translate(5px,-2px)}89%{opacity:.85;transform:translate(-4px,2px)}91%{opacity:.85;transform:translate(3px,1px)}93%,100%{opacity:0}}
+</style>
+<rect width="1000" height="280" fill="#0d1117"/>
+<g class="sunbox" opacity=".9"><circle cx="500" cy="200" r="120" fill="url(#sun)" opacity="0.55"/><rect x="380" y="150" width="240" height="1.0" fill="#0d1117"/><rect x="380" y="159" width="240" height="1.8" fill="#0d1117"/><rect x="380" y="168" width="240" height="2.6" fill="#0d1117"/><rect x="380" y="177" width="240" height="3.4" fill="#0d1117"/><rect x="380" y="186" width="240" height="4.2" fill="#0d1117"/><rect x="380" y="195" width="240" height="5.0" fill="#0d1117"/></g>
+<rect x="0" y="200" width="1000" height="80" fill="#0d1117"/>
+<g clip-path="url(#floor)" stroke="#8b5cf6" stroke-width="1" opacity=".55">
+  <g class="moving"><line x1="0" y1="200" x2="1000" y2="200"/><line x1="0" y1="214" x2="1000" y2="214"/><line x1="0" y1="228" x2="1000" y2="228"/><line x1="0" y1="242" x2="1000" y2="242"/><line x1="0" y1="256" x2="1000" y2="256"/><line x1="0" y1="270" x2="1000" y2="270"/><line x1="0" y1="284" x2="1000" y2="284"/><line x1="0" y1="298" x2="1000" y2="298"/><line x1="0" y1="186" x2="1000" y2="186"/></g><line x1="500.0" y1="200" x2="-1180.0" y2="280"/><line x1="500.0" y1="200" x2="-1040.0" y2="280"/><line x1="500.0" y1="200" x2="-900.0" y2="280"/><line x1="500.0" y1="200" x2="-760.0" y2="280"/><line x1="500.0" y1="200" x2="-620.0" y2="280"/><line x1="500.0" y1="200" x2="-480.0" y2="280"/><line x1="500.0" y1="200" x2="-340.0" y2="280"/><line x1="500.0" y1="200" x2="-200.0" y2="280"/><line x1="500.0" y1="200" x2="-60.0" y2="280"/><line x1="500.0" y1="200" x2="80.0" y2="280"/><line x1="500.0" y1="200" x2="220.0" y2="280"/><line x1="500.0" y1="200" x2="360.0" y2="280"/><line x1="500.0" y1="200" x2="500.0" y2="280"/><line x1="500.0" y1="200" x2="640.0" y2="280"/><line x1="500.0" y1="200" x2="780.0" y2="280"/><line x1="500.0" y1="200" x2="920.0" y2="280"/><line x1="500.0" y1="200" x2="1060.0" y2="280"/><line x1="500.0" y1="200" x2="1200.0" y2="280"/><line x1="500.0" y1="200" x2="1340.0" y2="280"/><line x1="500.0" y1="200" x2="1480.0" y2="280"/><line x1="500.0" y1="200" x2="1620.0" y2="280"/><line x1="500.0" y1="200" x2="1760.0" y2="280"/><line x1="500.0" y1="200" x2="1900.0" y2="280"/><line x1="500.0" y1="200" x2="2040.0" y2="280"/><line x1="500.0" y1="200" x2="2180.0" y2="280"/>
+</g>
+<rect x="0" y="200" width="1000" height="80" fill="url(#fade)"/>
+<line x1="0" y1="200" x2="1000" y2="200" stroke="#ff2bd6" stroke-width="2" filter="url(#glow)"/>
+<g text-anchor="middle">
+  <text class="name g1" x="500" y="118">JOSÉ DAVID ANGARITA</text>
+  <text class="name g2" x="500" y="118">JOSÉ DAVID ANGARITA</text>
+  <text class="name" x="500" y="118" filter="url(#glow)">JOSÉ DAVID ANGARITA</text>
+  <text class="sub" x="500" y="160">SOFTWARE PARA LA INDUSTRIA · MEETEAM</text>
+</g>
+<rect width="1000" height="280" fill="url(#scan)"/>
+</svg>
